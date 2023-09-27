@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-extension ContentView {
+extension DogView {
     @MainActor class ViewModel: ObservableObject {
         enum ViewState {
             case start

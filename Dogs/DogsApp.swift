@@ -12,7 +12,7 @@ struct DogsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DogView()
         }
     }
 }
