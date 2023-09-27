@@ -11,6 +11,14 @@
 		FAC6AE1B2AC462E000EA76A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE1A2AC462E000EA76A1 /* ContentView.swift */; };
 		FAC6AE1D2AC462E500EA76A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC6AE1C2AC462E500EA76A1 /* Assets.xcassets */; };
 		FAC6AE202AC462E500EA76A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC6AE1F2AC462E500EA76A1 /* Preview Assets.xcassets */; };
+		FAC6AE3B2AC469EA00EA76A1 /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE292AC469EA00EA76A1 /* GenericDataProvider.swift */; };
+		FAC6AE3C2AC469EA00EA76A1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE2C2AC469EA00EA76A1 /* API.swift */; };
+		FAC6AE3D2AC469EA00EA76A1 /* GenericRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE2E2AC469EA00EA76A1 /* GenericRequest.swift */; };
+		FAC6AE3E2AC469EA00EA76A1 /* DogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE2F2AC469EA00EA76A1 /* DogRequest.swift */; };
+		FAC6AE432AC469EA00EA76A1 /* DogRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE352AC469EA00EA76A1 /* DogRouter.swift */; };
+		FAC6AE452AC469EA00EA76A1 /* DogDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE392AC469EA00EA76A1 /* DogDataProvider.swift */; };
+		FAC6AE482AC46A0E00EA76A1 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE472AC46A0E00EA76A1 /* Dog.swift */; };
+		FAC6AE4C2AC4707600EA76A1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE4B2AC4707600EA76A1 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		FAC6AE1A2AC462E000EA76A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAC6AE1C2AC462E500EA76A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC6AE1F2AC462E500EA76A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAC6AE292AC469EA00EA76A1 /* GenericDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
+		FAC6AE2C2AC469EA00EA76A1 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FAC6AE2E2AC469EA00EA76A1 /* GenericRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRequest.swift; sourceTree = "<group>"; };
+		FAC6AE2F2AC469EA00EA76A1 /* DogRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogRequest.swift; sourceTree = "<group>"; };
+		FAC6AE352AC469EA00EA76A1 /* DogRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogRouter.swift; sourceTree = "<group>"; };
+		FAC6AE392AC469EA00EA76A1 /* DogDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDataProvider.swift; sourceTree = "<group>"; };
+		FAC6AE472AC46A0E00EA76A1 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		FAC6AE4B2AC4707600EA76A1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		FAC6AE172AC462E000EA76A1 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				FAC6AE462AC469FE00EA76A1 /* Model */,
+				FAC6AE262AC469EA00EA76A1 /* DataProvider */,
+				FAC6AE492AC46E6900EA76A1 /* ViewModel */,
+				FAC6AE4A2AC46E7200EA76A1 /* View */,
 				FAC6AE182AC462E000EA76A1 /* DogsApp.swift */,
-				FAC6AE1A2AC462E000EA76A1 /* ContentView.swift */,
 				FAC6AE1C2AC462E500EA76A1 /* Assets.xcassets */,
 				FAC6AE1E2AC462E500EA76A1 /* Preview Content */,
 			);
@@ -65,6 +84,83 @@
 				FAC6AE1F2AC462E500EA76A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAC6AE262AC469EA00EA76A1 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE292AC469EA00EA76A1 /* GenericDataProvider.swift */,
+				FAC6AE382AC469EA00EA76A1 /* DogDataProvider */,
+				FAC6AE2A2AC469EA00EA76A1 /* NetworkRepository */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		FAC6AE2A2AC469EA00EA76A1 /* NetworkRepository */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE2B2AC469EA00EA76A1 /* API */,
+				FAC6AE2D2AC469EA00EA76A1 /* Request */,
+				FAC6AE322AC469EA00EA76A1 /* Router */,
+			);
+			path = NetworkRepository;
+			sourceTree = "<group>";
+		};
+		FAC6AE2B2AC469EA00EA76A1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE2C2AC469EA00EA76A1 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAC6AE2D2AC469EA00EA76A1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE2E2AC469EA00EA76A1 /* GenericRequest.swift */,
+				FAC6AE2F2AC469EA00EA76A1 /* DogRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		FAC6AE322AC469EA00EA76A1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE352AC469EA00EA76A1 /* DogRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FAC6AE382AC469EA00EA76A1 /* DogDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE392AC469EA00EA76A1 /* DogDataProvider.swift */,
+			);
+			path = DogDataProvider;
+			sourceTree = "<group>";
+		};
+		FAC6AE462AC469FE00EA76A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE472AC46A0E00EA76A1 /* Dog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC6AE492AC46E6900EA76A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE4B2AC4707600EA76A1 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAC6AE4A2AC46E7200EA76A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6AE1A2AC462E000EA76A1 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +233,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC6AE4C2AC4707600EA76A1 /* ViewModel.swift in Sources */,
+				FAC6AE3D2AC469EA00EA76A1 /* GenericRequest.swift in Sources */,
 				FAC6AE1B2AC462E000EA76A1 /* ContentView.swift in Sources */,
+				FAC6AE3B2AC469EA00EA76A1 /* GenericDataProvider.swift in Sources */,
 				FAC6AE192AC462E000EA76A1 /* DogsApp.swift in Sources */,
+				FAC6AE482AC46A0E00EA76A1 /* Dog.swift in Sources */,
+				FAC6AE3C2AC469EA00EA76A1 /* API.swift in Sources */,
+				FAC6AE452AC469EA00EA76A1 /* DogDataProvider.swift in Sources */,
+				FAC6AE432AC469EA00EA76A1 /* DogRouter.swift in Sources */,
+				FAC6AE3E2AC469EA00EA76A1 /* DogRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
