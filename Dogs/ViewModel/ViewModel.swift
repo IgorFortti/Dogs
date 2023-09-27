@@ -18,7 +18,11 @@ extension ContentView {
             case failure
         }
         
-        @Published var dog: Dog?
+        @Published var dog: Dog? {
+            didSet {
+                objectWillChange.send()
+            }
+        }
         
         @Published var currentState: ViewState = .start
         

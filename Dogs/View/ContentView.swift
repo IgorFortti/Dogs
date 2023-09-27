@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct ContentView: View {
     
@@ -14,15 +15,24 @@ struct ContentView: View {
     @State private var viewDidLoad = true
     
     var body: some View {
-        Text(viewModel.dog?.message ?? "Não deu certo")
-            .padding()
+            VStack {
+                if let imageURL = URL(string: viewModel.dog?.message ?? "") {
+                    URLImage(imageURL) { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                    }
+                } else {
+                    Text("Carregando imagem...")
+                }
+            }
             .onAppear {
                 if viewDidLoad {
                     viewDidLoad.toggle()
                     viewModel.doFetchDog()
                 }
             }
-    }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {

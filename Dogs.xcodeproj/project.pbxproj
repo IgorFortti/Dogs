@@ -19,6 +19,8 @@
 		FAC6AE452AC469EA00EA76A1 /* DogDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE392AC469EA00EA76A1 /* DogDataProvider.swift */; };
 		FAC6AE482AC46A0E00EA76A1 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE472AC46A0E00EA76A1 /* Dog.swift */; };
 		FAC6AE4C2AC4707600EA76A1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE4B2AC4707600EA76A1 /* ViewModel.swift */; };
+		FAC6AE4F2AC49E1700EA76A1 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FAC6AE4E2AC49E1700EA76A1 /* URLImage */; };
+		FAC6AE512AC49E1700EA76A1 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = FAC6AE502AC49E1700EA76A1 /* URLImageStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC6AE512AC49E1700EA76A1 /* URLImageStore in Frameworks */,
+				FAC6AE4F2AC49E1700EA76A1 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +183,10 @@
 			dependencies = (
 			);
 			name = Dogs;
+			packageProductDependencies = (
+				FAC6AE4E2AC49E1700EA76A1 /* URLImage */,
+				FAC6AE502AC49E1700EA76A1 /* URLImageStore */,
+			);
 			productName = Dogs;
 			productReference = FAC6AE152AC462E000EA76A1 /* Dogs.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +215,9 @@
 				Base,
 			);
 			mainGroup = FAC6AE0C2AC462E000EA76A1;
+			packageReferences = (
+				FAC6AE4D2AC49E1700EA76A1 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = FAC6AE162AC462E000EA76A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -445,6 +456,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAC6AE4D2AC49E1700EA76A1 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAC6AE4E2AC49E1700EA76A1 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAC6AE4D2AC49E1700EA76A1 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		FAC6AE502AC49E1700EA76A1 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAC6AE4D2AC49E1700EA76A1 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAC6AE0D2AC462E000EA76A1 /* Project object */;
 }
