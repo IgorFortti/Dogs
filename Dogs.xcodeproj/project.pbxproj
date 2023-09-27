@@ -18,7 +18,7 @@
 		FAC6AE432AC469EA00EA76A1 /* DogRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE352AC469EA00EA76A1 /* DogRouter.swift */; };
 		FAC6AE452AC469EA00EA76A1 /* DogDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE392AC469EA00EA76A1 /* DogDataProvider.swift */; };
 		FAC6AE482AC46A0E00EA76A1 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE472AC46A0E00EA76A1 /* Dog.swift */; };
-		FAC6AE4C2AC4707600EA76A1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE4B2AC4707600EA76A1 /* ViewModel.swift */; };
+		FAC6AE4C2AC4707600EA76A1 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6AE4B2AC4707600EA76A1 /* DogViewModel.swift */; };
 		FAC6AE4F2AC49E1700EA76A1 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FAC6AE4E2AC49E1700EA76A1 /* URLImage */; };
 		FAC6AE512AC49E1700EA76A1 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = FAC6AE502AC49E1700EA76A1 /* URLImageStore */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 		FAC6AE352AC469EA00EA76A1 /* DogRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogRouter.swift; sourceTree = "<group>"; };
 		FAC6AE392AC469EA00EA76A1 /* DogDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDataProvider.swift; sourceTree = "<group>"; };
 		FAC6AE472AC46A0E00EA76A1 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
-		FAC6AE4B2AC4707600EA76A1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FAC6AE4B2AC4707600EA76A1 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,7 @@
 		FAC6AE492AC46E6900EA76A1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FAC6AE4B2AC4707600EA76A1 /* ViewModel.swift */,
+				FAC6AE4B2AC4707600EA76A1 /* DogViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC6AE4C2AC4707600EA76A1 /* ViewModel.swift in Sources */,
+				FAC6AE4C2AC4707600EA76A1 /* DogViewModel.swift in Sources */,
 				FAC6AE3D2AC469EA00EA76A1 /* GenericRequest.swift in Sources */,
 				FAC6AE1B2AC462E000EA76A1 /* DogView.swift in Sources */,
 				FAC6AE3B2AC469EA00EA76A1 /* GenericDataProvider.swift in Sources */,

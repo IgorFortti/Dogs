@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  DogViewModel.swift
 //  Dogs
 //
 //  Created by Igor Fortti on 27/09/23.
