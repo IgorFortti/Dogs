@@ -16,17 +16,19 @@ struct DogView: View {
     
     var body: some View {
         ZStack {
-            if let imageURL = URL(string: viewModel.dog?.message ?? "") {
-                URLImage(imageURL) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
+            switch viewModel.currentState {
+            case .success:
+                if let imageURL = URL(string: viewModel.dog?.message ?? "") {
+                    URLImage(imageURL) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .edgesIgnoringSafeArea(.all)
+                    }
+                } else {
+                    Text("")
                 }
-            } else {
-                Text("")
-            }
-            if viewModel.currentState == .success {
+                
                 VStack {
                     Spacer()
                     Button(action: {
@@ -42,6 +44,12 @@ struct DogView: View {
                             .padding(.bottom, 20)
                     }
                 }
+            case .loading:
+                ProgressView()
+            case .failure:
+                Text("Não foi possível carregar a imagem.")
+            case .start:
+                EmptyView()
             }
         }
         .onAppear {
